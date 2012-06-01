@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=.
+
+Name: libavfilter
+Description: FFmpeg video filtering library
+Version: 2.61.100
+Requires: 
+Conflicts:
+Libs: ${libdir}/libavfilter.a -ldl -Wl,-rpath,/usr/local/lib -L/usr/local/lib -lSDL -lpthread -lm -pthread -lz 
+Cflags: -I${includedir}
